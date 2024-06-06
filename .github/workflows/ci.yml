@@ -20,6 +20,6 @@ jobs:
         run: npm run build
 
       - name: Test Recipe components
-        run: npm test -- src/components/Recipe
+        run: npm test -- src/components/Recipe --coverage
         
 
