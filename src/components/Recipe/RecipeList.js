@@ -19,7 +19,7 @@ export default function RecipeList() {
             {recipes.map(recipe => (
                 <div key={recipe.id} className="border p-4 rounded-lg text-center">
                     <img src={recipe.image} alt={recipe.name} className="w-full h-48 object-cover rounded-lg max-w-48 max-h-48 mx-auto" />
-                    <h2 className="text-lg font-bold mt-2">{recipe.name}</h2>
+                    <h2 data-testid="Recipe-selector" className="text-lg font-bold mt-2">{recipe.name}</h2>
                     <Link to={`/recipe/${recipe.id}`} className="text-blue-500">View Recipe</Link>
                 </div>
             ))}
